@@ -5,20 +5,20 @@
 class GifMaker < Formula
   desc "A CLI tool for converting video files to GIFs"
   homepage "https://github.com/Akashdeep-Patra/gif-maker"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Akashdeep-Patra/gif-maker/releases/download/v0.0.5/gif-maker_Darwin_x86_64.tar.gz"
-      sha256 "2574d9adc80ac1a689e56c2af45f970503142aa5c3a59c8fdb4a2caf342b71f0"
+      url "https://github.com/Akashdeep-Patra/gif-maker/releases/download/v0.0.6/gif-maker_Darwin_x86_64.tar.gz"
+      sha256 "7238a93e39bdc9212a144ce13829c14aefb6d59b3e2afac115a92f1d7db9887c"
 
       def install
         bin.install "gif-maker"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Akashdeep-Patra/gif-maker/releases/download/v0.0.5/gif-maker_Darwin_arm64.tar.gz"
-      sha256 "1417fe3cdd43c64afeddea997ca971c9b4521178d325cdd5328764bc013e0e6f"
+      url "https://github.com/Akashdeep-Patra/gif-maker/releases/download/v0.0.6/gif-maker_Darwin_arm64.tar.gz"
+      sha256 "46be9a740bbe6e77201cf62645e052756628ec6cdf59a4af872c287c4f777b80"
 
       def install
         bin.install "gif-maker"
@@ -28,15 +28,15 @@ class GifMaker < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Akashdeep-Patra/gif-maker/releases/download/v0.0.5/gif-maker_Linux_x86_64.tar.gz"
-      sha256 "0f1f953c6cb4147669b13e6f8a761f6444421dbee48e361a562d1106042100c2"
+      url "https://github.com/Akashdeep-Patra/gif-maker/releases/download/v0.0.6/gif-maker_Linux_x86_64.tar.gz"
+      sha256 "64c74b7da49677ea637253fca60b21dab9ed6a41b6b7b5bbc2d2be9f18330a4a"
       def install
         bin.install "gif-maker"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Akashdeep-Patra/gif-maker/releases/download/v0.0.5/gif-maker_Linux_arm64.tar.gz"
-      sha256 "1a081e2f2cacb690180848295cc95784fffe5c98a7af099271c7faa4f79a0008"
+      url "https://github.com/Akashdeep-Patra/gif-maker/releases/download/v0.0.6/gif-maker_Linux_arm64.tar.gz"
+      sha256 "042e3944711f1d09e8617255f9645ed56b07deaf87310ca556458149761e145b"
       def install
         bin.install "gif-maker"
       end
