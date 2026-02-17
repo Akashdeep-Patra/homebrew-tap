@@ -5,15 +5,15 @@
 class Zgv < Formula
   desc "A modern TUI Git client for Zed IDE"
   homepage "https://github.com/Akashdeep-Patra/zed-git-view"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.1/zgv_0.1.1_darwin_x86_64.tar.gz"
-      sha256 "43c13940491d419d582aa8be68b9e780a53c90f8bdbced6f3c93c61b6f6ec110"
+      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.2/zgv_0.1.2_darwin_x86_64.tar.gz"
+      sha256 "fb67fab20d64e394b78af9fb2736100795f8333957fb236d531499868737b0be"
 
       def install
         bin.install "zgv"
@@ -24,8 +24,8 @@ class Zgv < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.1/zgv_0.1.1_darwin_aarch64.tar.gz"
-      sha256 "695250ec7ec780e476f327e59f8e783460f6bf06952dde7c100315865c1bb135"
+      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.2/zgv_0.1.2_darwin_aarch64.tar.gz"
+      sha256 "75620e67a783052fde2c7fce71734383325ae138e61a041b40b79b596e3b909c"
 
       def install
         bin.install "zgv"
@@ -39,8 +39,8 @@ class Zgv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.1/zgv_0.1.1_linux_x86_64.tar.gz"
-      sha256 "26c95980f39f0e70020d06e34f6a771e59d73dccc144f41276be250bfe35e824"
+      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.2/zgv_0.1.2_linux_x86_64.tar.gz"
+      sha256 "8da4eeee9a7142b9ef249b9d8540861049f10d0b4a110f97aad05a6801d9158f"
       def install
         bin.install "zgv"
 
@@ -50,8 +50,8 @@ class Zgv < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.1/zgv_0.1.1_linux_aarch64.tar.gz"
-      sha256 "9c8cf96ceaa236da5a99e2bf3abcbd020a2d35b1c9f7daae75f95dfc9e3e3553"
+      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.2/zgv_0.1.2_linux_aarch64.tar.gz"
+      sha256 "0cf9c71b0596a5bf9ab45ed43b9c604cce8aac0d6656030dcb1f1b7b84173579"
       def install
         bin.install "zgv"
 
