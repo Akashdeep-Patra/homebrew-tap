@@ -5,15 +5,15 @@
 class Zgv < Formula
   desc "A modern TUI Git client for Zed IDE"
   homepage "https://github.com/Akashdeep-Patra/zed-git-view"
-  version "0.1.7"
+  version "0.1.8"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.7/zgv_0.1.7_darwin_x86_64.tar.gz"
-      sha256 "73949e58f88eedef7274aff7ac7628fd3d3c0ab348a8d311733135d0426d3ad4"
+      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.8/zgv_0.1.8_darwin_x86_64.tar.gz"
+      sha256 "1dff57053382f49dcce305b6dfabde7715bde93e4064d4af0b8684118258804a"
 
       def install
         bin.install "zgv"
@@ -24,8 +24,8 @@ class Zgv < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.7/zgv_0.1.7_darwin_aarch64.tar.gz"
-      sha256 "f37741c9e0be17da60e02dd9c77727a26d8ecc5fbb4142ebe872d9022b008be5"
+      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.8/zgv_0.1.8_darwin_aarch64.tar.gz"
+      sha256 "5c712412b847ee54fbf06af0d858ed5ad5432aea952295a59681463a793fd9e5"
 
       def install
         bin.install "zgv"
@@ -39,8 +39,8 @@ class Zgv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.7/zgv_0.1.7_linux_x86_64.tar.gz"
-      sha256 "2cedfa394b9828b82a2a537fd8038b74f079cda6c2a9a3b336eeb401c8ac05cd"
+      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.8/zgv_0.1.8_linux_x86_64.tar.gz"
+      sha256 "7eb4c25f7c2d6c7f3f25df83bd0f56fd5f66f6d406fba5fa664d3f3b6d338108"
       def install
         bin.install "zgv"
 
@@ -50,8 +50,8 @@ class Zgv < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.7/zgv_0.1.7_linux_aarch64.tar.gz"
-      sha256 "48a720adbf8ef6deae7ed7685090e08f8ccfe684b7b9e18b4d83464d8cfe3841"
+      url "https://github.com/Akashdeep-Patra/zed-git-view/releases/download/v0.1.8/zgv_0.1.8_linux_aarch64.tar.gz"
+      sha256 "a1661b2944653e00245bb2ba2e6369dd393054d44d395160fe2e0da835a9d074"
       def install
         bin.install "zgv"
 
@@ -66,8 +66,8 @@ class Zgv < Formula
     <<~EOS
       Shell completions have been installed.
 
-      To use zgv inside Zed IDE, open the integrated terminal and run:
-        zgv
+      To enable global Zed integration tasks:
+        zgv zed install
     EOS
   end
 
