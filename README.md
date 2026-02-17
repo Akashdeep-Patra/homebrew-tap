@@ -6,7 +6,7 @@ Homebrew formulae for tools by [@Akashdeep-Patra](https://github.com/Akashdeep-P
 
 | Formula | Description | Version |
 |---------|-------------|---------|
-| [zgv](https://github.com/Akashdeep-Patra/zed-git-view) | A modern TUI Git client for Zed IDE | `0.1.6` |
+| [zgv](https://github.com/Akashdeep-Patra/zed-git-view) | A modern TUI Git client for Zed IDE | `0.1.7` |
 
 ## Usage
 
